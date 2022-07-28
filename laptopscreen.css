@@ -1,0 +1,229 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1rem;
+}
+                                                                                                                    
+.inner{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%) scale(1.5);
+}
+
+.outer-rect{
+    height: 300px;
+    width:500px;
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.inner-rect{
+    height: 75%;
+    width: 85%;
+    border: 1px solid black;
+    transform: translate(0 , 5%);
+    background-color: white;
+    background-image: url(./webimages/capturescreen2.png);
+    background-position: bottom left;
+    background-size: cover;
+}
+
+.camera-outer{
+    height: 15px;
+    width:15px;
+    border-radius: 50%;
+    background-color: black;
+    position:absolute;
+    top: 0;
+    transform: translate(0 , 100%);
+    display:flex;
+    justify-content: center;
+}
+
+.camera-inner{
+    position: relative;
+    align-self:center;
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+.black-cam{
+    position: relative;
+    height:50%;
+    width:50%;
+    background-color: black;
+    align-self: center;  
+    border-radius: 50%;
+}
+
+
+.upper-cut{
+    height: 100px;
+    width:30px;
+    background-color:white;
+    clip-path: polygon( 10% 0 , 90% 0 , 100% 10% , 100% 90% , 90% 100% , 10% 100% ,0 90% , 0 10%);
+    position: absolute;
+    top:0;
+    transform: rotate(90deg) translate(-200% , 0);
+    z-index:3;
+}
+
+.roll{
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    top:0;
+    transform: translate(0 , -10%);
+    z-index:4;
+    clip-path: polygon( 20% 0 , 80% 0 , 100% 100% , 0 100% );
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+.roll-item{
+    height:3px;
+    width:2px;
+    background-color: white;
+    border: 1px solid silver;
+    margin: 0 2px;
+}
+
+.full-width-gray{
+    width:calc(100% - 40px);
+    height:6px;
+    background-color: gray;
+    position: absolute;
+    top:0;
+    z-index: 2;
+}
+
+.down-hold{
+    position: absolute;
+    width:100%;
+    height: 50px;
+    background-color: gray;
+    z-index: -2;
+    bottom:0;
+    left:0;
+    transform: translate(0 , 30%);
+    border-radius: 0 0 20% 20%/ 0 0 30% 30%;
+}
+
+.down-cir{
+    height: 10px;
+    width:10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    color: black;
+    font-size:13px;
+    font-weight:bold;
+    transform: translate(0 , 12px);
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+}
+
+.down-cir-1{
+    left: 15%;
+}
+
+.down-cir-2{
+    right: 15%;
+}
+
+.down-supp{
+    height: 20px;
+    width:70px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(0 ,25px);
+    border: 2px solid black;
+    border-top: 3px solid black;
+    background-color: silver;
+}
+
+.down-supp-1{
+    left: 20%;
+}
+
+.down-supp-2{
+    right: 20%;
+}
+
+.logo{
+    position: absolute;
+    bottom:0;
+    color: silver;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:sans-serif;
+    transform: translate(0 , -5px);
+    letter-spacing: 0.1ch;
+}
+
+.bent-name{
+    display: inline-block;
+    position:relative;
+    transform:rotate(-40deg) translate(0 , -1px);
+}
+
+.full-width-y{
+    height: calc( 100% - 20px);
+    width: 6px;
+    background-color: gray;
+    position: absolute;
+}
+
+.full-width-y-left{
+    left:0;
+    top:20px;
+}
+
+.full-width-y-right{
+    right:0;
+    top:20px;
+}
+
+.btd-left{
+    height:50px;
+    width:60px;
+    background-color: black;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 20px 0 0 0;
+    border-top:6px solid gray;
+    border-left: 6px solid gray;
+}
+.btd-right{
+    height:50px;
+    width:60px;
+    background-color: black;
+    position: absolute;
+    top:0;
+    right:0;
+    border-radius: 0 20px 0 0;
+    border-top:6px solid gray;
+    border-right: 6px solid gray;
+}
